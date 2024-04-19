@@ -83,8 +83,8 @@ struct Log {
     backend: Option<Backend>,
     storage: Option<String>,
     error: Option<String>,
-    logs: Vec<String>,
-    links: Vec<Link>,
+    logs: Option<Vec<String>>,
+    links: Option<Vec<Link>>,
 }
 
 fn main() -> Result<()> {
